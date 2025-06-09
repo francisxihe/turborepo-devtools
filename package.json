@@ -1,0 +1,70 @@
+{
+  "name": "turborepo-devtools",
+  "displayName": "Turborepo DevTools",
+  "description": "通用的 Turborepo 项目开发工具，提供可视化的项目管理界面",
+  "version": "0.0.1",
+  "publisher": "francisxihe",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/francisxihe/turborepo-devtools.git"
+  },
+  "homepage": "https://github.com/francisxihe/turborepo-devtools",
+  "bugs": {
+    "url": "https://github.com/francisxihe/turborepo-devtools/issues"
+  },
+  "keywords": [
+    "turborepo",
+    "monorepo",
+    "devtools",
+    "visualization",
+    "project-management"
+  ],
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished",
+    "onCommand:turborepoDevtools.showPanel"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "turborepoDevtools.showPanel",
+        "title": "Turborepo DevTools",
+        "category": "Turborepo"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "turborepoDevtools.showPanel",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "build": "pnpm run build:extension && pnpm run build:webview",
+    "build:extension": "tsc -p ./",
+    "build:webview": "cd webview && pnpm run build",
+    "watch": "tsc -watch -p ./",
+    "dev:webview": "cd webview && pnpm run dev",
+    "compile": "pnpm run build",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.0.0",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.74.0",
+    "@vscode/vsce": "^3.5.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "glob": "^8.0.3"
+  }
+}
