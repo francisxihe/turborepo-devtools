@@ -1,0 +1,69 @@
+<svg class="h-[24px] w-auto dark:hidden" width="76" height="76" viewBox="0 0 76 76" fill="none">
+<!-- 主圆形背景 -->
+<circle cx="38" cy="38" r="30" fill="url(#paint0_linear_bg)" opacity="0.1"/>
+
+<!-- 主要图标 - 类似Turborepo但有差异化 -->
+<path d="M38 18C27.5066 18 19 26.5066 19 37C19 47.4934 27.5066 56 38 56C48.4934 56 57 47.4934 57 37C57 26.5066 48.4934 18 38 18ZM38 48C31.9249 48 27 43.0751 27 37C27 30.9249 31.9249 26 38 26C44.0751 26 49 30.9249 49 37C49 43.0751 44.0751 48 38 48Z" fill="url(#paint1_linear_main)"/>
+
+<!-- 开发工具元素 - 代码符号 -->
+<path d="M32 34L29 37L32 40" stroke="url(#paint2_linear_code)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M44 34L47 37L44 40" stroke="url(#paint3_linear_code)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M40 32L36 42" stroke="url(#paint4_linear_code)" stroke-width="2" stroke-linecap="round"/>
+
+<!-- 外围装饰元素 - 表示构建和优化 -->
+<path fill-rule="evenodd" clip-rule="evenodd" d="M40.5 14.5V7.5C56.2401 8.3472 68.5 21.2599 68.5 37C68.5 52.7401 56.2401 65.6528 40.5 66.5V59.5C52.0685 58.6584 61.5 48.7316 61.5 37C61.5 25.2684 52.0685 15.3416 40.5 14.5Z" fill="url(#paint5_linear_outer)"/>
+
+<!-- 左下角装饰 -->
+<path d="M21 52.5C18.1005 49.1005 16.2361 44.7361 15.8944 40H8.5C8.8639 46.8639 11.6361 52.8639 15.8944 57.1056L21 52.5Z" fill="url(#paint6_linear_corner)"/>
+
+<!-- 右下角装饰 -->
+<path d="M35.5 66.5V59.5C30.7361 59.1583 26.3717 57.2939 23.0722 54.3944L18.4667 59L23.0722 63.6056C27.3139 67.3639 32.6361 69.8639 35.5 66.5Z" fill="url(#paint7_linear_corner2)"/>
+
+<defs>
+<!-- 背景渐变 -->
+<linearGradient id="paint0_linear_bg" x1="8" y1="8" x2="68" y2="68" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0EA5E9"/>
+<stop offset="1" stop-color="#EC4899"/>
+</linearGradient>
+
+<!-- 主要渐变 - 类似Turborepo但稍有不同 -->
+<linearGradient id="paint1_linear_main" x1="19" y1="18" x2="57" y2="56" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0EA5E9"/>
+<stop offset="0.5" stop-color="#8B5CF6"/>
+<stop offset="1" stop-color="#EC4899"/>
+</linearGradient>
+
+<!-- 代码元素渐变 -->
+<linearGradient id="paint2_linear_code" x1="29" y1="34" x2="32" y2="40" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFFFFF" stop-opacity="0.9"/>
+<stop offset="1" stop-color="#FFFFFF" stop-opacity="0.6"/>
+</linearGradient>
+
+<linearGradient id="paint3_linear_code" x1="44" y1="34" x2="47" y2="40" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFFFFF" stop-opacity="0.9"/>
+<stop offset="1" stop-color="#FFFFFF" stop-opacity="0.6"/>
+</linearGradient>
+
+<linearGradient id="paint4_linear_code" x1="36" y1="32" x2="40" y2="42" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFFFFF" stop-opacity="0.9"/>
+<stop offset="1" stop-color="#FFFFFF" stop-opacity="0.6"/>
+</linearGradient>
+
+<!-- 外围元素渐变 -->
+<linearGradient id="paint5_linear_outer" x1="40.5" y1="7.5" x2="68.5" y2="66.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0EA5E9"/>
+<stop offset="0.7" stop-color="#8B5CF6"/>
+<stop offset="1" stop-color="#EC4899"/>
+</linearGradient>
+
+<linearGradient id="paint6_linear_corner" x1="8.5" y1="40" x2="21" y2="57.1056" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0EA5E9" stop-opacity="0.8"/>
+<stop offset="1" stop-color="#8B5CF6" stop-opacity="0.6"/>
+</linearGradient>
+
+<linearGradient id="paint7_linear_corner2" x1="18.4667" y1="54.3944" x2="35.5" y2="66.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#8B5CF6" stop-opacity="0.8"/>
+<stop offset="1" stop-color="#EC4899" stop-opacity="0.6"/>
+</linearGradient>
+</defs>
+</svg>

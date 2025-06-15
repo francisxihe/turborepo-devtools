@@ -2,7 +2,7 @@
   "name": "turborepo-devtools",
   "displayName": "Turborepo DevTools",
   "description": "通用的 Turborepo 项目开发工具，提供可视化的项目管理界面",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "publisher": "francisxihe",
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
   "categories": [
     "Other"
   ],
+  "icon": "logo.png",
   "activationEvents": [
     "onStartupFinished",
     "onCommand:turborepoDevtools.showPanel"
@@ -54,8 +55,8 @@
     "watch": "tsc -watch -p ./",
     "dev:webview": "cd webview && pnpm run dev",
     "compile": "pnpm run build",
-    "package": "vsce package",
-    "publish": "vsce publish"
+    "package": "vsce package --no-dependencies",
+    "publish": "vsce publish --no-dependencies"
   },
   "devDependencies": {
     "@types/glob": "^8.0.0",
